@@ -5,4 +5,4 @@
  * python manage.py makemigrations
  * python manage.py migrate
 # 4. run server using this script
-python manage.py runserver
+ * python manage.py runserver
