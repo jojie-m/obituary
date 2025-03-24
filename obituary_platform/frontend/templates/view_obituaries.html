@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Obituaries</title>
+</head>
+<body>
+    <h2>Obituaries</h2>
+    <ul>
+        {% for obituary in obituaries %}
+            <li><a href="/{{ obituary.slug }}/">{{ obituary.name }}</a> ({{ obituary.date_of_birth }} - {{ obituary.date_of_death }})</li>
+        {% endfor %}
+    </ul>
+    <a href="/submit/">Submit a New Obituary</a>
+</body>
+</html>
